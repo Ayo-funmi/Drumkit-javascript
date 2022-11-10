@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(grey, black);
+    background-repeat: no-repeat;
+}
+.keys{
+    height: 100vh;
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.key{
+    cursor: pointer;
+    background-color:azure;
+    opacity: 50%;
+    border: 2px solid sienna;
+    padding: .2em .3em;
+    margin: .5em;
+    font-size: 1.5rem;
+    transition: all 0.07s;
+    width: 100px;
+    text-align: center;
+}
+.playing{
+    transform: scale(1.1);
+    border-color: #8b5008;
+    box-shadow: 0 0 10px #ffc600;
+}
+kbd{
+    display: block;
+    color: darkred;
+    font-size: 30px;
+    font-family: serif;
+}
+.sound{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: red;
+}
